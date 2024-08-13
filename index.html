@@ -1,0 +1,2268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Download comprehensive GATE eBooks for various engineering branches. 
+                Access detailed chapters, key concepts, and practice problems to excel in GATE exams. 
+                Tailored for aspiring engineers, our resources offer in-depth coverage of essential topics.">
+    <meta name="keyword" content="GATE eBooks, GATE exam preparation, engineering eBooks, GATE study material, 
+                GATE chapters, GATE practice questions, engineering branches, GATE subject-wise eBooks, 
+                download GATE books, GATE exam guide">
+
+    <title>Gate eBooks</title>
+    <style>
+      /* Basic styling for the page */
+     /* body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+      }  */
+        body{
+          font-family: Arial, sans-serif;
+          background-color: #f7f7f7;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start; /* Change from 'center' to 'flex-start' */
+          flex-direction: column;
+          min-height: 100vh; /* Ensure the body can grow beyond the viewport */
+          overflow-y: auto; /* Enable scrolling for the body */
+        }
+
+      /* Stylish header with gradient background and drop shadow */
+      .main-title {
+        padding: 20px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        font-size: 48px;
+        color: #ffffff;
+        margin: 0;
+        text-shadow: 3px 3px 7px #000;
+        text-align: center;
+        background: linear-gradient( 135deg, #0015ff, #ff00cc);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+      }
+
+      /* Container for all content */
+      /*.container {
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0px 0px 30px rgb(3, 248, 199);
+        width: 90%;
+        max-width: 1000px;
+        text-align: center;
+        margin-top: 120px;
+        overflow-y: auto;
+        max-height: calc(100vh - 180px);
+      }  */
+      .container {
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0px 0px 30px rgb(3, 248, 199);
+        width: 90%;
+        max-width: 1000px;
+        text-align: center;
+        margin: 120px auto 20px auto; /* Centering the container with margins */
+        overflow-y: auto;
+      }
+
+      /* Title and description styling */
+      h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 20px;
+        color: #555555;
+        margin-bottom: 20px;
+      }
+
+      /* Style for notebook icons */
+      .notebook {
+        display: inline-block;
+        width: 50px;
+        height: 60px;
+        border-radius: 5px;
+        margin-right: 10px;
+        position: relative;
+        color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 60px;
+        overflow: hidden;
+        background: linear-gradient(to right);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease-in-out;
+      }
+
+      /* Add glowing effect on hover */
+      .notebook:hover {
+        box-shadow: 0 0 20px 10px;
+      }
+
+      /* Style for short name of the book */
+      .notebook::before {
+        content: attr(data-book);
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+
+      /* Different colors for each branch */
+      .CSE {
+        background-color: #007bff;
+      }
+
+      .CSE:hover {
+        box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0.7);
+      }
+
+      .ECE {
+        background-color: #28a745;
+      }
+
+      .ECE:hover {
+        box-shadow: 0 0 20px 10px rgba(40, 167, 69, 0.7);
+      }
+
+      .MECH {
+        background-color: #ffc107;
+      }
+
+      .MECH:hover {
+        box-shadow: 0 0 20px 10px rgba(255, 193, 7, 0.7);
+      }
+
+      .CIVIL {
+        background-color: #dc3545;
+      }
+
+      .CIVIL:hover {
+        box-shadow: 0 0 20px 10px rgba(220, 53, 69, 0.7);
+      }
+
+      .ELECTRICAL {
+        background-color: #17a2b8;
+      }
+
+      .ELECTRICAL:hover {
+        box-shadow: 0 0 20px 10px rgba(23, 162, 184, 0.7);
+      }
+
+      .OS {
+        background-color: #6f42c1;
+      }
+
+      .OS:hover {
+        box-shadow: 0 0 20px 10px rgba(111, 66, 193, 0.7);
+      }
+
+      /* Animation style for list items */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      li {
+        padding: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: fadeIn 0.5s ease-in-out;
+        position: relative;
+        margin-bottom: 20px;
+        background-color: #f7f7f7;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      li:hover {
+        background-color: #eaeaea;
+      }
+
+      /* Center the back button */
+      .back-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      .back-button:hover {
+        background-color: #555;
+      }
+
+      /* Website visit counter style */
+      .visit-counter {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #fff;
+        color: #000;
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.904);
+      }
+
+      /* Hide all sections initially */
+      .section {
+        display: none;
+      }
+
+      /* Style for download links aligned to the right */
+      .download-link {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        background-color: #0084ff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .download-link:hover {
+        background-color: #0015ff;
+      }
+
+      /* Ensure the book icon stays on the left */
+      .notebook {
+        position: absolute;
+        left: 10px;
+      }
+
+      /* Contact section styling */
+      .contact-section {
+        padding: 20px;
+        text-align: center;
+        background-color: #f1f1f1;
+        border-top: 1px solid #dddddd;
+        margin: 20px auto; /* Center the contact section */
+        width: 90%;
+        max-width: 1000px;
+      }
+
+      .contact-section h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .contact-section p {
+        font-size: 18px;
+        color: #666;
+      }
+
+      /* Stylish footer styling */
+      footer {
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      footer a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+       /* Media queries for responsiveness */
+      /* For screens smaller than 768px */
+      @media (max-width: 768px) {
+        .container {
+          width: 95%;
+          padding: 15px;
+        }
+
+        .main-title {
+          font-size: 36px;
+          padding: 15px;
+        }
+
+        h2 {
+          font-size: 28px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+
+        li {
+          padding: 15px;
+          font-size: 16px;
+        }
+
+        .notebook {
+          width: 40px;
+          height: 50px;
+          font-size: 14px;
+          line-height: 50px;
+        }
+
+        .download-link {
+          padding: 8px 15px;
+        }
+      }
+
+      /* For screens smaller than 480px */
+      @media (max-width: 480px) {
+        .container {
+          width: 100%;
+          padding: 10px;
+        }
+
+        .main-title {
+          font-size: 28px;
+          padding: 10px;
+        }
+
+        h2 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        li {
+          padding: 10px;
+          font-size: 14px;
+        }
+
+        .notebook {
+          width: 35px;
+          height: 45px;
+          font-size: 12px;
+          line-height: 45px;
+        }
+
+        .download-link {
+          padding: 5px 10px;
+          font-size: 14px;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Website visit counter -->
+    <div class="visit-counter">Visits: <span id="visitCount"></span></div>
+
+    <!-- Main title placed outside the container -->
+    <h1 class="main-title">Welcome to Gate e-Books</h1>
+
+    <!-- Main container for the content -->
+    <div class="container">
+      <!-- Page description -->
+      <p>
+        Select your engineering branch or subject to explore the available
+        resources. Click on a subject to view its chapters and download the
+        corresponding PDF files.
+      </p>
+
+      <!-- Branch selection section -->
+      <div id="branch-section" class="section">
+        <h2>Select Your Engineering Branch</h2>
+        <ul>
+          <li onclick="showSubjects('CSE')">
+            <div class="notebook CSE" data-book="CS&E"></div>
+            Computer Science & Engineering
+          </li>
+          <li onclick="showSubjects('ECE')">
+            <div class="notebook ECE" data-book="E&C"></div>
+            Electronics & Communication Engineering
+          </li>
+          <li onclick="showSubjects('MECH')">
+            <div class="notebook MECH" data-book="MECH"></div>
+            Mechanical Engineering
+          </li>
+          <li onclick="showSubjects('CIVIL')">
+            <div class="notebook CIVIL" data-book="CIVIL"></div>
+            Civil Engineering
+          </li>
+          <li onclick="showSubjects('ELECTRICAL')">
+            <div class="notebook ELECTRICAL" data-book="ELEC"></div>
+            Electrical Engineering
+          </li>
+          <li onclick="showSubjects('OS')">
+            <div class="notebook OS" data-book="OS"></div>
+            Other Subjects
+          </li>
+        </ul>
+      </div>
+
+      <!-- Subject section -->
+      <div id="subject-section" class="section">
+        <h2 id="subject-title"></h2>
+        <p>Choose a chapter to download its PDF file.</p>
+        <ul id="subject-list"></ul>
+        <button class="back-button" onclick="showSection('branch-section')">
+          Back
+        </button>
+      </div>
+
+      <!-- Chapter section -->
+      <div id="chapter-section" class="section">
+        <h2 id="chapter-title"></h2>
+        <p>Select a chapter to download the PDF resource.</p>
+        <ul id="chapter-list"></ul>
+        <button class="back-button" onclick="showSection('subject-section')">
+          Back
+        </button>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or feedback, please reach out to us at <a href="mailto:otheruses306@gmail.com">otheruses306@gmail.com</a>.</p>
+    </div>
+
+    <!-- Stylish Footer -->
+    <footer>
+      <p>&copy; 2024 Gate eBooks. All Rights Reserved.</p>
+      <p>
+        <a href="#branch-section">Home</a> |
+        <a href="#contact-section">Contact</a> |
+        <a href="#privacy-policy">Privacy Policy</a>
+      </p>
+    </footer>
+
+    <script>
+      // Array of subjects for each branch
+      const subjects = {
+        CSE: [
+          "Algorithms",
+          "Compiler Design",
+          "Computer Organization & Architecture",
+          "Databases",
+          "Digital Logic",
+          "Information System",
+          "Network",
+          "Operating Systems",
+          "Programming & Data Structures",
+          "Software Engineering & Web Technology",
+          "Theory of Computation",
+          "CSE Mock Test",
+        ],
+        ECE: [
+          "Digital Circuits",
+          "Analog Circuits",
+          "Communication Systems",
+          "Control System",
+          "Network Theory",
+          "Signals & Systems",
+          "Electronic Devices",
+          "Electromagnetics",
+          "ECE Mock Test",
+        ],
+        MECH: [
+          "Engineering Mechanic",
+          "Strength of Materials",
+          "Theory of Machine, Vibrations & Design",
+          "Heat Transfer",
+          "Thermodynamics",
+          "Fluid Mechanics",
+          "Manufacturing Technology",
+          "Industrial Engineering",
+          "ME Mock Test",
+        ],
+        CIVIL: [
+          "Concrete Structures",
+          "Construction Materials & Management",
+          "Engineering Mechanics",
+          "Environmental Engineering",
+          "Fluid Mechanics & Hydraulics",
+          "Geomatrics Engineering",
+          "Solid Mechanics",
+          "Steel Structures",
+          "Water Resources Engineering",
+          "Structural Analysis",
+          "Geotechnical Engineering",
+          "Transportation Engineering",
+          "CE Mock Test",
+        ],
+        ELECTRICAL: [
+          "Signals and Systems",
+          "Power Systems",
+          "Power Electronics and Devices",
+          "Electrical Machines",
+          "Electrical and Electronic Measurements",
+          "Electric Circuits and Fields",
+          "Control Systems",
+          "Analog and Digital Electronics",
+          "EE Mock Test",
+        ],
+        OS: ["Engg Maths", "Aptitude", "Reasoning", "English"],
+      };
+
+      // Array of chapters for each subject with unique download links and branch colors
+      const chapters = {
+
+         // CSE
+        "Algorithms": [
+          {
+            title: "Asymptotic Analysis",
+            link: "https://drive.google.com/uc?export=download&id=18prO1I8l5xw4nx1Hh_xCFdrjM2y4TPTM",
+            branch: "CSE",
+          },
+          {
+            title: "Sorting Algorithms",
+            link: "https://drive.google.com/uc?export=download&id=1POFDYNpun_G1wps_e2hwx6Etux86zErZ",
+            branch: "CSE",
+          },
+          {
+            title: "Divide-and-conquer",
+            link: "https://drive.google.com/uc?export=download&id=1VD0iOvRD_5bRrY_RF8f5AlH6NVrcZmGF",
+            branch: "CSE",
+          },
+          {
+            title: "Greedy Approach",
+            link: "https://drive.google.com/uc?export=download&id=1iYAjF0IYBc4UMKc-MJboYRP9rzG1kOmv",
+            branch: "CSE",
+          },
+          {
+            title: "Dynamic Programming",
+            link: "https://drive.google.com/uc?export=download&id=1MgO9PioXTlxeiDz5COFtU5dHYtbG6U3J",
+            branch: "CSE",
+          },
+          {
+            title: "Algorithms Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1YWVBShsdYWfrP4_h5r091OMe5LauPlO5",
+            branch: "CSE",
+          },
+          {
+            title: "Algorithms Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1LZazcNtsoWpg0iXW4OMxXkULJ2KTCM2-",
+            branch: "CSE",
+          },
+          {
+            title: "Algorithms Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1TwlHAV1sRay-Nfq6v3mXY2q_xMKqyfJt",
+            branch: "CSE",
+          },
+        ],
+        "Compiler Design": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1DFR8nM-qMTJFRnlBMJRH2dNXXdPWeu3z?usp=drive_link",
+            branch: "CSE",
+          },
+        ],
+        "Computer Organization & Architecture": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/17rUPEmJM-gXnqwhuBtc2BWdPuaVXSa1Q?usp=drive_link",
+            branch: "CSE",
+          },
+        ],
+        "Databases": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1jP-Vk4LS8d2aT_s21QdpHp_KEeioHXHC?usp=drive_link",
+            branch: "CSE",
+          },
+        ],
+        "Digital Logic": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1Gi6DaXEU3Nj92JT_1qWL-aP3hx-kGSIN?usp=drive_link",
+            branch: "CSE",
+          },
+        ],
+        "Information System": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1oIRrtx7bGJJPSur4I6oHvCEnxQJF_OoM?usp=drive_link",
+            branch: "CSE",
+          },
+        ],
+        "Network": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1MhW4A-z-jreNS8Xk_Y2V2ln1TPGyKkEs?usp=drive_link",
+            branch: "CSE",
+          },
+        ],
+        "Operating Systems": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/174berwtTzQrKt8RuTkQD4nT_0jAbMPSh?usp=drive_link",
+            branch: "CSE",
+          },
+        ],
+        "Programming & Data Structures": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1TU6yLu95yORrxYAuNML6r0-nmlJM9X6X?usp=drive_link",
+            branch: "CSE",
+          },
+        ],
+        "Software Engineering & Web Technology": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1TlVO1smV7VUAUNXLQYDrDdhCgYxLxOsq?usp=drive_link",
+            branch: "CSE",
+          },
+        ],
+        "Theory of Computation": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1fZzZDgsiHejvML1cwJldKj2Ro9UDkdhC?usp=drive_link",
+            branch: "CSE",
+          },
+        ],
+        "CSE Mock Test": [
+          {
+            title: "Mock Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1zSYCaIbi4VziYHcDTBWgEyMQ2pFDLub_",
+            branch: "CSE",
+          },
+          {
+            title: "Mock Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1ikUZSkfv8UryH3rVbOb4RlJbMHadAkAc",
+            branch: "CSE",
+          },
+          {
+            title: "Mock Test-3",
+            link: "https://drive.google.com/uc?export=download&id=18VO6fi9kPDHdTMWKNArJmqPo37qTJr7r",
+            branch: "CSE",
+          },
+          {
+            title: "Mock Test-4",
+            link: "https://drive.google.com/uc?export=download&id=1_B6LBtOfD698iLBDyxZORa4kAbsukaME",
+            branch: "CSE",
+          },
+          {
+            title: "Mock Test-5",
+            link: "https://drive.google.com/uc?export=download&id=1XKjNGK3n_lOUN_jIQ1wmBK0pK9K6fjDV",
+            branch: "CSE",
+          },
+        ],
+          
+        // ECE
+        "Digital Circuits": [
+          {
+            title: "Number Systems",
+            link: "https://drive.google.com/uc?export=download&id=1czzV9l7pnyEeorkun5_dC_GUmDT7RLnw",
+            branch: "ECE",
+          },
+          {
+            title: "Boolean Algebra",
+            link: "https://drive.google.com/uc?export=download&id=1C4VW4CKsblrRZ458XuEmJMK3a_THcdNI",
+            branch: "ECE",
+          },
+          {
+            title: "Combinational Circuits",
+            link: "https://drive.google.com/uc?export=download&id=1A2afaINs5MpTAGf2g9MaWdixCM6Pya3j",
+            branch: "ECE",
+          },
+          {
+            title: "Sequential Circuits",
+            link: "https://drive.google.com/uc?export=download&id=1J4yw4gdsSuZqarocXFe1GjD5Z4_zsDXR",
+            branch: "ECE",
+          },
+          {
+            title: "AD and DA Circuits & Semiconductor Memories",
+            link: "https://drive.google.com/uc?export=download&id=1j3vGcyS5XUAiFiGp4iHzlojKjXcmgq1q",
+            branch: "ECE",
+          },
+          {
+            title: "Microprocessor 8085",
+            link: "https://drive.google.com/uc?export=download&id=1QpdzcxpwfIshaMav3iDnz7Lrb5mIinTQ",
+            branch: "ECE",
+          },
+          {
+            title: "Digital Circuits Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1o3MeluIl0tt9S6FYQXXny6zYnXFeJM1k",
+            branch: "ECE",
+          },
+          {
+            title: "Digital Circuits Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1OHSgTEMNYUPS-mgHnt_lfoRR9WuOH1IR",
+            branch: "ECE",
+          },
+          {
+            title: "Digital Circuits Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1MARdvdt7_NPdfUbG9sygi7gt0KYwusqm",
+            branch: "ECE",
+          },
+        ],
+        "Analog Circuits": [
+          {
+            title: "Op-Amps",
+            link: "https://drive.google.com/uc?export=download&id=1euWeI7PGwzJ1FVamV1oVx919Eh1ts-p9",
+            branch: "ECE",
+          },
+          {
+            title: "Diode Circuits",
+            link: "https://drive.google.com/uc?export=download&id=1jczXQz8omhBHITr0FTonXETJ4Yzl1TeQ",
+            branch: "ECE",
+          },
+          {
+            title: "Transistor Biasing",
+            link: "https://drive.google.com/uc?export=download&id=1-yHmzyHsu91K_sHwjXhnvo7OGg5EAXkU",
+            branch: "ECE",
+          },
+          {
+            title: "Amplifiers",
+            link: "https://drive.google.com/uc?export=download&id=1yLW7vGzhjadPERJRnrT9qZzVOiSLTAZK",
+            branch: "ECE",
+          },
+          {
+            title: "Differential and Feedback Amplifiers",
+            link: "https://drive.google.com/uc?export=download&id=1dEVKSZ5N1BgKeSoQUQ6hoVlMXGUmqk9p",
+            branch: "ECE",
+          },
+          {
+            title: "Analog Circuits Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1NCD0vBuK9n6yUp4QoGbx-MH-udYDEDU3",
+            branch: "ECE",
+          },
+          {
+            title: "Analog Circuits Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1Be5IfiG6LDVY8t4NDhlya7whpreawvU-",
+            branch: "ECE",
+          },
+          {
+            title: "Analog Circuits Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1N7H6E8tzOe75qAkwbU4cv425XMEdf8pk",
+            branch: "ECE",
+          },
+        ],
+        "Communication Systems": [
+          {
+            title: "Analog Modulation",
+            link: "https://drive.google.com/uc?export=download&id=1Bsx2LKUvw-QQWMtt8PubZ_H1LqJxvM53",
+            branch: "ECE",
+          },
+          {
+            title: "Probability, Random Variables & Random Process",
+            link: "https://drive.google.com/uc?export=download&id=1Kv-uuSd2KtmPAOMuVyTlo3HIohLWB6WY",
+            branch: "ECE",
+          },
+          {
+            title: "Pulse Modulation & Baseband Communications",
+            link: "https://drive.google.com/uc?export=download&id=1n0OGovQCWFmtpSjIXJLhg2i9xHzPtnSB",
+            branch: "ECE",
+          },
+          {
+            title: "Pass-Band Modulation",
+            link: "https://drive.google.com/uc?export=download&id=1KVUSFu4eBG9JCeDWx7DxBc9vRDCfmoh7",
+            branch: "ECE",
+          },
+          {
+            title: "Information Theory & Coding",
+            link: "https://drive.google.com/uc?export=download&id=1Sl0JWVJv2dTLAF3SKrxnaI1hqvn_Rja0",
+            branch: "ECE",
+          },
+          {
+            title: "Communication Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1iBffK5yBoTcUGHhK-zP3FgFHOf7jvrjK",
+            branch: "ECE",
+          },
+          {
+            title: "Communication Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1kI1qwafoQdWO8UOFk_orIWaZ4Hdf2OdS",
+            branch: "ECE",
+          },
+          {
+            title: "Communication Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1-W0aMZlTYWid8KVv-dTUG66NN_irqZ48",
+            branch: "ECE",
+          },
+          {
+            title: "Communication Test-4",
+            link: "https://drive.google.com/uc?export=download&id=1nprv6lUQWAF5bJ1G51Ngqol9v7FwOWmb",
+            branch: "ECE",
+          },
+        ],
+        "Control System": [
+          {
+            title: "Introduction to Control Systems",
+            link: "https://drive.google.com/uc?export=download&id=14HGZyhoJx6aXjPRD0RhxwnPMAFOkikmn",
+            branch: "ECE",
+          },
+          {
+            title: "Time Response Anaysis",
+            link: "https://drive.google.com/uc?export=download&id=1Pr6P1v_BYjZ3qADYHnr69Q06VALCL3Y7",
+            branch: "ECE",
+          },
+          {
+            title: "Stability Analysis",
+            link: "https://drive.google.com/uc?export=download&id=1ZKiwtqIHYCU3B4uV6w26KKnQmPGIf0j1",
+            branch: "ECE",
+          },
+          {
+            title: "Controllers and Compensators",
+            link: "https://drive.google.com/uc?export=download&id=10KODlQiA1G_w7OwUBGEhxBhu_tcyPN-W",
+            branch: "ECE",
+          },
+          {
+            title: "State Space Analysis",
+            link: "https://drive.google.com/uc?export=download&id=1ptrtrFm9rKz9ELweJ5nY_QxTcRJYVieL",
+            branch: "ECE",
+          },
+          {
+            title: "Control Systems Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1TNwIDXH8tAYNQVhoRMWpwx-QF6zU4kYZ",
+            branch: "ECE",
+          },
+          {
+            title: "Control Systems Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1XzxW0hSmBfZQmgmSOOeug3dIlsLvwE6U",
+            branch: "ECE",
+          },
+          {
+            title: "Control Systems Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1AodMlXRvdks13VtVaeEOJHiZd53WudB6",
+            branch: "ECE",
+          },
+          {
+            title: "Control Systems Test-4",
+            link: "https://drive.google.com/uc?export=download&id=169HZfOAwuOiaeryXGpUrlPZWOLYzyoCW",
+            branch: "ECE",
+          },
+        ],
+        "Network Theory": [
+          {
+            title: "Network Elements & Basic Laws",
+            link: "https://drive.google.com/uc?export=download&id=1aJNf_UOdzT5zh2jWw3-ccmN6pKNGG6Hp",
+            branch: "ECE",
+          },
+          {
+            title: "Network Theorems",
+            link: "https://drive.google.com/uc?export=download&id=1qaO7j7aMv4irKQIC3U875OYSjjQR7Hmu",
+            branch: "ECE",
+          },
+          {
+            title: "Transient Analysis (AC & DC)",
+            link: "https://drive.google.com/uc?export=download&id=1xrGiGWxa-rDcnuEh-sStC-I2KyGAH788",
+            branch: "ECE",
+          },
+          {
+            title: "Two-Port Networks",
+            link: "https://drive.google.com/uc?export=download&id=1PA0R8O6FZFdA2dpDD5rUE8X11npNptht",
+            branch: "ECE",
+          },
+          {
+            title: "Resonance",
+            link: "https://drive.google.com/uc?export=download&id=1i1dSHJQ2Ok2LimmWoJ_g2HZ9MrETeOjC",
+            branch: "ECE",
+          },
+          {
+            title: "Networks Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1O4gy-DsaYvXi_NUxtmE1GxDdVxpZojVs",
+            branch: "ECE",
+          },
+          {
+            title: "Networks Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1pqxII-QPug3_YrS1VimHSRnN5rXOv1TP",
+            branch: "ECE",
+          },
+          {
+            title: "Networks Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1CjHYfhB9zEI9GDbuiVNNZ3EupuKG1-4v",
+            branch: "ECE",
+          },
+          {
+            title: "Networks Test-4",
+            link: "https://drive.google.com/uc?export=download&id=1pm4HLGkOxjPoIFgDiXfQnr9e2qYjOwRM",
+            branch: "ECE",
+          },
+        ],
+        "Signals & Systems": [
+          {
+            title: "Introduction to Signals & Systems",
+            link: "https://drive.google.com/uc?export=download&id=1KCOI2XI8JBxKnhIXN76dH63_ZlHBw3vi",
+            branch: "ECE",
+          },
+          {
+            title: "Laplace Transform",
+            link: "https://drive.google.com/uc?export=download&id=1Z8YhVzCsW8dSKF_UkFICy2jBnf8FZJTL",
+            branch: "ECE",
+          },
+          {
+            title: "Z Transform",
+            link: "https://drive.google.com/uc?export=download&id=1b5hO7XS0qlnXuDfkIqjzcAIJLMiuehG0",
+            branch: "ECE",
+          },
+          {
+            title: "Continuous Time Fourier Analysis",
+            link: "https://drive.google.com/uc?export=download&id=14cnO3J582dtoFXRjda9QgJ5yzdF52VNO",
+            branch: "ECE",
+          },
+          {
+            title: "Discrete Time Fourier Analysis",
+            link: "https://drive.google.com/uc?export=download&id=1nAELxycyCSBO4q66FTEk5qgePw4uiM5s",
+            branch: "ECE",
+          },
+          {
+            title: "Signals & Systems Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1McirljMSNFaihvE3ea51OgvdAKUxDPa5",
+            branch: "ECE",
+          },
+          {
+            title: "Signals & Systems Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1oURypvGPJpR23nT3uObjGV7rGx6ye9J9",
+            branch: "ECE",
+          },
+          {
+            title: "Signals & Systems Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1ZRS7wh-Q9sshF2RxLdw8-2miBozSzg54",
+            branch: "ECE",
+          },
+          {
+            title: "Signals & Systems Test-4",
+            link: "https://drive.google.com/uc?export=download&id=1LGoIqiRsy9o_Msk6Uabu7oMkZZJ3ZDjR",
+            branch: "ECE",
+          },
+        ],
+        "Electronic Devices": [
+          {
+            title: "Semiconductor Theory",
+            link: "https://drive.google.com/uc?export=download&id=1FJh_uF3tdQaHXiNO6vhsF2KWkhmLHc1y",
+            branch: "ECE",
+          },
+          {
+            title: "Theory of P-N Junction Diode",
+            link: "https://drive.google.com/uc?export=download&id=1qioDWIoZgFI3kmANbNWOzPPORXIG165Q",
+            branch: "ECE",
+          },
+          {
+            title: "Bipolar Junction Transistors",
+            link: "https://drive.google.com/uc?export=download&id=1mdnvr_vMre3aUAiI-rAgVlfrZllT2JK2",
+            branch: "ECE",
+          },
+          {
+            title: "Field Effect Transistors",
+            link: "https://drive.google.com/uc?export=download&id=1nOgYcLUGqhkJYz_GWZwh7AmAlB0S4gt1",
+            branch: "ECE",
+          },
+          {
+            title: "Optoelectronic Devices",
+            link: "https://drive.google.com/uc?export=download&id=1ed9pSOyfHrcNA3jU3Ut5wI0Wm8pkveCw",
+            branch: "ECE",
+          },
+          {
+            title: "Electronic Devices Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1gaO34-IyMmeUncPsgfomWHGTmPRO1A5t",
+            branch: "ECE",
+          },
+          {
+            title: "Electronic Devices Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1N_ugB8kArz4nAVO87RST6pFmPKPluz66",
+            branch: "ECE",
+          },
+          {
+            title: "Electronic Devices Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1bch23mjSNneTHise3uXLVXTu14PHD-EW",
+            branch: "ECE",
+          },
+          {
+            title: "Electronic Devices Test-4",
+            link: "https://drive.google.com/uc?export=download&id=1ycsSzjeKI0MLuHxBNEwycF5cPStcuKqJ",
+            branch: "ECE",
+          },
+        ],
+        "Electromagnetics": [
+          {
+            title: "Elements of Vector Calculus & Static Fields",
+            link: "https://drive.google.com/uc?export=download&id=1-zrDETTW0HvxEPS7CEN9_XcxqbsOzOwk",
+            branch: "ECE",
+          },
+          {
+            title: "Maxwell Equations & EM-Waves Propogation",
+            link: "https://drive.google.com/uc?export=download&id=14BdF_BJ6ep1KooRheinfSXvyCyrFoGRK",
+            branch: "ECE",
+          },
+          {
+            title: "Transmission Lines",
+            link: "https://drive.google.com/uc?export=download&id=1rfaEt9wVW_5A52FsxYJB0JF-yjQU9207",
+            branch: "ECE",
+          },
+          {
+            title: "Wave Guides",
+            link: "https://drive.google.com/uc?export=download&id=1PyG-MQWEiJ7E5UDUt6SqA6urvxwXYmm_",
+            branch: "ECE",
+          },
+          {
+            title: "Basics of Antennas",
+            link: "https://drive.google.com/uc?export=download&id=1yr8VKnvICcHjhZDf48-JMh4hvhn4J98H",
+            branch: "ECE",
+          },
+          {
+            title: "Electromagnatics Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1Anj70uCtt1ZPqGzTIWg5dmB9nAAg3HSa",
+            branch: "ECE",
+          },
+          {
+            title: "Electromagnatics Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1Gqvs2nG7eBtMQP3rG9_1sUTY_vd67gDg",
+            branch: "ECE",
+          },
+          {
+            title: "Electromagnatics Test-3",
+            link: "https://drive.google.com/uc?export=download&id=131XUsUbZo0YNetGjN7CllQIVrIZh1rTx",
+            branch: "ECE",
+          },
+          {
+            title: "Electromagnatics Test-4",
+            link: "https://drive.google.com/uc?export=download&id=1W_dSFCZgn05p3RfiXp79U1lybZzcoPXl",
+            branch: "ECE",
+          },
+        ],
+        "ECE Mock Test": [
+          {
+            title: "ECE Mock Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1pdkBvwouUVvtzZl__ljC1ebab6xsRx3S",
+            branch: "ECE",
+          },
+          {
+            title: "ECE Mock Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1P_3_zP09AG0KPhWlOTYVdbVxFx3ReGIQ",
+            branch: "ECE",
+          },
+          {
+            title: "ECE Mock Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1qSEwB2CNM_g6vdoCp4STC6ZKtKbf9JdH",
+            branch: "ECE",
+          },
+        ],
+
+        // OS
+        "Engg Maths": [
+          {
+            title: "Calculus",
+            link: "https://drive.google.com/uc?export=download&id=1W06pUODR2b7qJQWAxH2reP6vvUFu2gHT",
+            branch: "OS",
+          },
+          {
+            title: "Ordinary Differential Equations",
+            link: "https://drive.google.com/uc?export=download&id=1FfvGxAmrwKdRnLiqMI14yb9_3LtT5UAk",
+            branch: "OS",
+          },
+          {
+            title: "Partial Differential Equations",
+            link: "https://drive.google.com/uc?export=download&id=1ua0GgULMHvoAHSMzXuEYmhoY3nogKDjp",
+            branch: "OS",
+          },
+          {
+            title: "Linear Algebra",
+            link: "https://drive.google.com/uc?export=download&id=1oHKBOImIhP-USIYESRkp_u-cUhfPmtW3",
+            branch: "OS",
+          },
+          {
+            title: "Probability & Statistics",
+            link: "https://drive.google.com/uc?export=download&id=1LJVLPrelv940_xixwrNGYPYOHQJxtYxU",
+            branch: "OS",
+          },
+          {
+            title: "Numerical Methods",
+            link: "https://drive.google.com/uc?export=download&id=1V8zCNeJ63pWW4ns7O2dB42L43LiFcmZH",
+            branch: "OS",
+          },
+          {
+            title: "Test",
+            link: "https://drive.google.com/uc?export=download&id=1lNW7sYP24wPHQkVChX9xgZYOodQnHxhF",
+            branch: "OS",
+          },
+          {
+            title: "Engg Maths Test-1",
+            link: "https://drive.google.com/uc?export=download&id=18zuzhIRDrV_iC9KmAJt1yDnTfBI8Hf6m",
+            branch: "OS",
+          },
+          {
+            title: "Engg Maths Test-2",
+            link: "https://drive.google.com/uc?export=download&id=123FoqpWbgiagLBXcqVYc0epXO22OkdEa",
+            branch: "OS",
+          },
+        ],
+        "English": [
+          {
+            title: "Grammer",
+            link: "https://drive.google.com/uc?export=download&id=1-zQDNBYTwt-UEK8WQhZy4rY3eLvxDM16",
+            branch: "OS",
+          },
+          {
+            title: "Vocabulary",
+            link: "https://drive.google.com/uc?export=download&id=1bhmrry6hcm-mS803mi9rGNzsm--IKUXN",
+            branch: "OS",
+          },
+          {
+            title: "Test",
+            link: "https://drive.google.com/uc?export=download&id=15ItBrSgBzWNaK5mEJXTNFhs80fB5TU8s",
+            branch: "OS",
+          },
+          {
+            title: "Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1Kk8Ie7ydKydbXi8Yg-CaAAJhw2Q8hZRe",
+            branch: "OS",
+          },
+          {
+            title: "Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1ItlNEG-o7KN-olTLobAoBtF4BWggACrb",
+            branch: "OS",
+          },
+          {
+            title: "Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1PzgNcgYzYA4-gIgurynnDjSz4Dv8lOLn",
+            branch: "OS",
+          },
+        ],
+        "Aptitude": [
+          {
+            title: "Simple Equations",
+            link: "https://drive.google.com/uc?export=download&id=1OfD1W6fZCVNJvm3MLfaI0_chIuvKBOHV",
+            branch: "OS",
+          },
+          {
+            title: "Ratio-Proportion-Variation",
+            link: "https://drive.google.com/uc?export=download&id=1ElglKBihQR2sbbv75LiQTwBN0dYFjDWo",
+            branch: "OS",
+          },
+          {
+            title: "Numbers",
+            link: "https://drive.google.com/uc?export=download&id=1g9xmghu_Is4GHTUL9LL9Z31pUg91OMj1",
+            branch: "OS",
+          },
+          {
+            title: "Percentage, Profit & Loss",
+            link: "https://drive.google.com/uc?export=download&id=1COogZHSfvzA6zko85lyra-DvVAR2GRPk",
+            branch: "OS",
+          },
+          {
+            title: "Simple Interest & Compound Interest",
+            link: "https://drive.google.com/uc?export=download&id=1xfjzI_kA44RN7I6IvOyXnVVuamWhcJbo",
+            branch: "OS",
+          },
+          {
+            title: "Average, Mixture & Alligations",
+            link: "https://drive.google.com/uc?export=download&id=1mG6Z2fUwPmwWwUdulNGKh9NGKDtkYZgj",
+            branch: "OS",
+          },
+          {
+            title: "Time and Work",
+            link: "https://drive.google.com/uc?export=download&id=1BkGVCPVIMuwoIp3Uo7AEvwcjVGjMQfQ1",
+            branch: "OS",
+          },
+          {
+            title: "Time and Distance",
+            link: "https://drive.google.com/uc?export=download&id=1WAC3MhLKbdG4iXFvef4PFxQLKK9aMGJe",
+            branch: "OS",
+          },
+          {
+            title: "Indices, Surds & Logarithms",
+            link: "https://drive.google.com/uc?export=download&id=1CCX2HdX_xKyYN9fy__3rSNYvn16SnIJg",
+            branch: "OS",
+          },
+          {
+            title: "Quadratic Equations",
+            link: "https://drive.google.com/uc?export=download&id=1BQWRj4FPzD-vJ0qWJ2TgLibeTExjmqRj",
+            branch: "OS",
+          },
+          {
+            title: "Inequalities",
+            link: "https://drive.google.com/uc?export=download&id=1f6NNFzxuaPVGlLc2HcSWfSs3Qz5766Qr",
+            branch: "OS",
+          },
+          {
+            title: "Progressions",
+            link: "https://drive.google.com/uc?export=download&id=1RLJN2K4pS09rja6vMz8dzcen475UAOTq",
+            branch: "OS",
+          },
+          {
+            title: "Permutation & Combinations",
+            link: "https://drive.google.com/uc?export=download&id=1HYmI2TMTC-xUwvtmNSeu9HLWZwix8s3L",
+            branch: "OS",
+          },
+          {
+            title: "Date Interpretation",
+            link: "https://drive.google.com/uc?export=download&id=19RC3UJH8Sa4H8U7uit2nXsPF1a6zGp63",
+            branch: "OS",
+          },
+          {
+            title: "Aptitude Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1rmRWLffPERkVxYWculUhy5ODIVsWzFSB",
+            branch: "OS",
+          },
+          {
+            title: "Aptitude Test-2",
+            link: "https://drive.google.com/uc?export=download&id=10K_6uNp5e-lJ-P5NbotLnSeITHrmDvtG",
+            branch: "OS",
+          },
+          {
+            title: "Aptitude Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1GB2YwFVpZCfmOecIPXULhfFUmKsT00uj",
+            branch: "OS",
+          },
+        ],
+        "Reasoning": [
+          {
+            title: "Number and Letter Series",
+            link: "https://drive.google.com/uc?export=download&id=18PE264EmRMGgzYpCjaqT1YZgCaAJr0v5",
+            branch: "OS",
+          },
+          {
+            title: "Analogies",
+            link: "https://drive.google.com/uc?export=download&id=1D3E3JYvUSwOuRXzMBy2ow90L8ZZgXm8o",
+            branch: "OS",
+          },
+          {
+            title: "Odd man Out",
+            link: "https://drive.google.com/uc?export=download&id=1VnWtM2_yWvpQFfPMWUVMrfAbDCPhGfcp",
+            branch: "OS",
+          },
+          {
+            title: "Coding and Decoding",
+            link: "https://drive.google.com/uc?export=download&id=117csdj_zeQzPm9Eth-7YWFIMBmY1QcmR",
+            branch: "OS",
+          },
+          {
+            title: "Blood Relations",
+            link: "https://drive.google.com/uc?export=download&id=1mAUvjhrKVInuFx3-zuPTN504jOBjH2MG",
+            branch: "OS",
+          },
+          {
+            title: "Venn Diagrams",
+            link: "https://drive.google.com/uc?export=download&id=1IU3435IbObj8_L6yJ2yPllXeJE4y8jpW",
+            branch: "OS",
+          },
+          {
+            title: "Seating Arrangements",
+            link: "https://drive.google.com/uc?export=download&id=1b9xhxYXgHE58bk3m04dP8Fno5SaDYsn-",
+            branch: "OS",
+          },
+          {
+            title: "Puzzles",
+            link: "https://drive.google.com/uc?export=download&id=1uALEaVBkx7xZB0SKaoPe5hRp_3dEBoUB",
+            branch: "OS",
+          },
+          {
+            title: "Clocks and Calenders",
+            link: "https://drive.google.com/uc?export=download&id=1s_DqgK_UMjbE4qryuYHctF7sfFQWNoS_",
+            branch: "OS",
+          },
+          {
+            title: "Test",
+            link: "https://drive.google.com/uc?export=download&id=1IxzpUqbkgsXrXHW4UnLTjOF0MmUoOBaR",
+            branch: "OS",
+          },
+          {
+            title: "Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1C_KYxqokAzUcD3Obcc3AtseTHhawamOx",
+            branch: "OS",
+          },
+          {
+            title: "Test-2",
+            link: "",
+            branch: "OS",
+          },
+        ],
+
+        // ELECTRICAL
+        "Signals and Systems": [
+          {
+            title: "Introduction to Signals and Systems",
+            link: "https://drive.google.com/uc?export=download&id=1d2ZZn21kU0sXrT4jPXOPHALYqBA-0kUu",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Laplace Transform",
+            link: "https://drive.google.com/uc?export=download&id=1pDq5xNRtwZmHJoBYyckboqi_x5KPhJ3m",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Z-Transform",
+            link: "https://drive.google.com/uc?export=download&id=15HdSLeIQLgdCAVpSNvWMrrivRMlPNuM-",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Continuous Time Fourier Analysis",
+            link: "https://drive.google.com/uc?export=download&id=1w7KlPBMy5ZpKkSWxRJysOcj3pXTXvIsW",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Signals and Systems Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1tEsdEWCdBEPTFn9OHY-Y2wz_3NtGHevs",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Signals and Systems Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1JyTGAsNJzcATmlu0yqJZ7lVz8yx6GgA3",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Signals and Systems Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1R4Z0nsvOAqO0H5SHYIy5E4ffULQjioxi",
+            branch: "ELECTRICAL",
+          },
+        ],
+        "Power Systems": [
+          {
+            title: "Power System Generation, Transmission & Distribution",
+            link: "https://drive.google.com/uc?export=download&id=1htYS1mkxZo1Kydm67dj8BSsHyJUqciDx",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Fault Analysis",
+            link: "https://drive.google.com/uc?export=download&id=1zQYpZ0j2pKUT3HHEZIelkXERDUyYDcL_",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Load Flow Analysis & Protection",
+            link: "https://drive.google.com/uc?export=download&id=1ZX4BppfxQaHXWM3mt_eUfhvBfAvTAi1t",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Power Systems Stability",
+            link: "https://drive.google.com/uc?export=download&id=1cDyccSZ3b8SfLlWbKFc82Tp6oM2xMyYN",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "HVDC and FACTS",
+            link: "https://drive.google.com/uc?export=download&id=1ISVRuPi-xaQOELMozo9kfh-9SfY6M_cU",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Power Systems Test-1",
+            link: "https://drive.google.com/uc?export=download&id=13kbmEZ4BujBCupVmMatRAUtJnOkY-OZv",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Power Systems Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1fgaqYL8ct-cQG-gNryN08jiqm_ZjgyxN",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Power Systems Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1pNIU4K_EwmW6iVHJtQ7iQICVFGHozaA9",
+            branch: "ELECTRICAL",
+          },
+        ],
+        "Power Electronics and Devices": [
+          {
+            title: "Power Semiconductor Devices",
+            link: "https://drive.google.com/uc?export=download&id=1colIQCGIcxDcB3YUf7CkzvxWmgvlg3SY",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "AC to DC Converters or Rectifiers",
+            link: "https://drive.google.com/uc?export=download&id=193mnFSiXPIkbXeVOUM-sF7AL588_FFjS",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "DC to DC Converters or Choppers",
+            link: "https://drive.google.com/uc?export=download&id=17gLSN2avZu4rSZon2HUrWSs0ECIpM3us",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "DC to AC Converters or Inverters",
+            link: "https://drive.google.com/uc?export=download&id=1BChr63gSm-8ABw9Vq1dlV_PPmzvkFt_R",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "AC Voltage Converters or Controllers & Electric Drivers",
+            link: "https://drive.google.com/uc?export=download&id=1r7J_1mqC8coJuz0U2dTOx3lZ259MYcl1",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Power Electronics & Drives Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1iydtTdO9AxzukJ__ANxYlmIBD1qdV-bl",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Power Electronics & Drives Test-2",
+            link: "https://drive.google.com/uc?export=download&id=10fZRKaTGkdRGDHISFVW8P19bO4OspRpJ",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Power Electronics & Drives Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1QlSgnv2O4U9DNYmAD2DNSElvrIdyUPJN",
+            branch: "ELECTRICAL",
+          },
+        ],
+        "Electrical Machines": [
+          {
+            title: "Transformers",
+            link: "https://drive.google.com/uc?export=download&id=1L4bbWC-yNU3_WaDF3fWuIRnBFGOz_aM1",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Principles of Electro Mechanical Energy Conversion",
+            link: "https://drive.google.com/uc?export=download&id=10bkoFSUCOCzr_81tfxsl39v5RbIGsK4i",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "DC Machines",
+            link: "https://drive.google.com/uc?export=download&id=1NWaz2pEKyDoGFr2Y9c_1BdhmYkgQIb6R",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Inductions Moters",
+            link: "https://drive.google.com/uc?export=download&id=1Xg0R_HRG6J1MHwMklkXybxP3k7yHsL2s",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Synchronous Machines",
+            link: "https://drive.google.com/uc?export=download&id=1XvXgfj8EecDCkcd5nwoRb7_W-lzMV-ZK",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Electrical Machines Test-1",
+            link: "https://drive.google.com/uc?export=download&id=12i8E0YGzwOHjjHWUC8ccNzdwmykGPk6n",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Electrical Machines Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1n7lVRD-kXbHe4EZ8pjbVaZrz448zxb84",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Electrical Machines Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1L2SD5uVT-RaYLQU42SkhCyW6X1Ze1QU6",
+            branch: "ELECTRICAL",
+          },
+        ],
+        "Electrical and Electronic Measurments": [
+          {
+            title: "Error Analysis and R, L, C Measurments",
+            link: "https://drive.google.com/uc?export=download&id=1V8_v53QcmljcktGsDSgBwQNAJ33R4ohi",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Electrical Mesuring Instruments",
+            link: "https://drive.google.com/uc?export=download&id=154rxkmHQKbtBKrzVWg8hFsxsEN3CAf-v",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Measurment of Power & Energy",
+            link: "https://drive.google.com/uc?export=download&id=1Yi7BG6f-ktzOCYmnVd-aiM3m5napcTbt",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Cathode Ray Oscilloscope & Electronic Voltmeters",
+            link: "https://drive.google.com/uc?export=download&id=1pyaeGuuCla2HFmw4opkUOkjppOP4tvtk",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Magnetic Measurments & Transducers",
+            link: "https://drive.google.com/uc?export=download&id=1Ew9alhmdVBbxcDhj37xgPTOmrcHGxTUg",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Electrical & Electronic Measurments Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1w4EALGiZ3WQZgfG8ul6Z_8HIVawNrBsm",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Electrical & Electronic Measurments Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1UC7RGJULDDG1tUe-CugOAuUEAhssSi7R",
+            branch: "ELECTRICAL",
+          },
+        ],
+        "Electric Circuits and Fields": [
+          {
+            title: "Network Elements & Basic Laws",
+            link: "https://drive.google.com/uc?export=download&id=1kg29rafktPaTvng62FXNuqd7Xkws9zTJ",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Network Theorems",
+            link: "https://drive.google.com/uc?export=download&id=1GQPD-VjH84rw3Rw6TeKDgZ1c7jPTGFCR",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Transient Analysis (AC and DC)",
+            link: "https://drive.google.com/uc?export=download&id=1dGGd0Ho5aKXPZpa-Lnvxv0DsMeJwQg_J",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Tow Port Networks",
+            link: "https://drive.google.com/uc?export=download&id=1p3EpkjXW6YYLUuGel_vIte-SrKO58TWM",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Resonance",
+            link: "https://drive.google.com/uc?export=download&id=1DDNQmbKmRgqfjQzVuMYdazCITxmJ8D9n",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Filters and Field Theory",
+            link: "https://drive.google.com/uc?export=download&id=17nDnWfrM43qMqh6dwcSlr8j3zAJLds6A",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Electric Circuits and Fields Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1jFwwcCJ_kTeFXD9l-8ODlShL8oRm1K06",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Electric Circuits and Fields Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1F7YYlM-fvhcVSmtscs7yO6LMsViPd3Vl",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Electric Circuits and Fields Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1eDLoaBfeG8Tw-_5mYdKhNbv4FnUb393Z",
+            branch: "ELECTRICAL",
+          },
+        ],
+        "Control Systems": [
+          {
+            title: "Introduction to Control Systems",
+            link: "https://drive.google.com/uc?export=download&id=1XY1DbyDoSsMg9qTt0D08PuvLceTv1zs2",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Time Response Analysis",
+            link: "https://drive.google.com/uc?export=download&id=1yA2izKKBqiCmwI3eQRgWKTJLyqVei-_f",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Stability Analysis",
+            link: "https://drive.google.com/uc?export=download&id=1bK2tBPh5bpMb_eqgEXRzwWCTeUmKMNHj",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Controllers and Compensators",
+            link: "https://drive.google.com/uc?export=download&id=1ZR-krRtOfVFHCM8Yak-EJVqA_r2n2asX",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "state Space Analysis",
+            link: "https://drive.google.com/uc?export=download&id=1vTFDaSxLoQgbE20hDTdSqwHvkOgoiIwb",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Control Systems Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1_ywhRf2YhC5Xwlpo0Nmkeiil8rX4eCcQ",
+            branch: "ELECTRICAL",
+          },
+        ],
+        "Analog and Digital Electronics": [
+          {
+            title: "Diode Circuits",
+            link: "https://drive.google.com/uc?export=download&id=1FDHjKi0jGFfb7NpSeKIwpG_Cjlg8IBN6",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Bipolar Junction Transistors",
+            link: "https://drive.google.com/uc?export=download&id=17lY1R-v6U1T7ZujFosAS6w2DMIcIMCI2",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Field Effect Transistors",
+            link: "https://drive.google.com/uc?export=download&id=1mciM6ZBceLVeuEI2ZiyIZp1Vs4bq5W-C",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Transistor Biasing",
+            link: "https://drive.google.com/uc?export=download&id=1BhJchJ5Vx9vJ2uAWa8d4VXQxQLYCCieE",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Amplifiers",
+            link: "https://drive.google.com/uc?export=download&id=1-Bb73aGhqjHOqWPwMaYb2kKX-vakJpTm",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Differential and Feedback Amplifiers",
+            link: "https://drive.google.com/uc?export=download&id=11_Dl4jbASPx87PjTbnwt5RIU40GPiOQA",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Operational Amplifiers",
+            link: "https://drive.google.com/uc?export=download&id=1sCAh0GJVDHlygBEGR07C8uxjZdHxzlMz",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Boolean Algebra & Minimization of Functions",
+            link: "https://drive.google.com/uc?export=download&id=102taxW56RsvUhUJ07qM0CV98CeWz7L5p",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Combinational Circuits",
+            link: "https://drive.google.com/uc?export=download&id=1G0Amfs0u_MB5J5yDiIqnjkqwbAVkmCr2",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Sequential Circuits",
+            link: "https://drive.google.com/uc?export=download&id=1spFK1kcDzZbA4IQ4x3uNxI5u9YY7QR8C",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Sample and Hold, AD & DA Circuits",
+            link: "https://drive.google.com/uc?export=download&id=1PnOBh5QOfRStEXNGjKc-jn3jZeIwQqLn",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Microprocessor 8085",
+            link: "https://drive.google.com/uc?export=download&id=1HScLNLdZSjPCYx1xJCyeNjgT6VryWN2h",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Analog & Digital Electronics Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1OYknQLvZCnqu8Kpx8tLd_r5O5U4rnW-W",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Analog & Digital Electronics Test-2",
+            link: "https://drive.google.com/uc?export=download&id=16R4P4fJ77K7Tb8mnLp0rIo_VuDUhbR5x",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "Analog & Digital Electronics Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1w4Cz3w72ZoZyXPu-0qRmUUi9zy4SVexB",
+            branch: "ELECTRICAL",
+          },
+        ],
+        "EE Mock Test": [
+          {
+            title: "EE Mock Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1ol29hXHZx0Wfjriw08VKGOoLXGkYC0tc",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "EE Mock Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1d86HoEynfTrTEmApi_Q8bi2CeaglecRr",
+            branch: "ELECTRICAL",
+          },
+          {
+            title: "EE Mock Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1qqKY8RVxPIaIH7O8h71CbVtCzpc3Lamp",
+            branch: "ELECTRICAL",
+          },
+        ],
+
+        // MECH
+        "Engineering Mechanic": [
+          {
+            title: "Introduction to Fores, Equilibrium",
+            link: "https://drive.google.com/uc?export=download&id=1GvrFepbIIKjXEjTmnsrWLkyOC2Cl1Uxx",
+            branch: "MECH",
+          },
+          {
+            title: "Free Body Diagrams - Trusses",
+            link: "https://drive.google.com/uc?export=download&id=1ScSoDfkvN3-0a-mDlveyZmNiDeKJy7FC",
+            branch: "MECH",
+          },
+          {
+            title: "Friction, Centre of Gravity, Moment of Inertia",
+            link: "https://drive.google.com/uc?export=download&id=1xsqShy5wMrm5wnAT39GmL6HidqvMqAQs",
+            branch: "MECH",
+          },
+          {
+            title: "Rectilinear Motion",
+            link: "https://drive.google.com/uc?export=download&id=1DKyctxRpstVwrw0sSNYmqEx7QcKKNDoB",
+            branch: "MECH",
+          },
+          {
+            title: "Curvilinear Montion",
+            link: "https://drive.google.com/uc?export=download&id=1C7EebPaUh2HUMztn8PvemaVLyG7bB-xp",
+            branch: "MECH",
+          },
+          {
+            title: "Engineering Mechanics Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1ipx9nj2dwmda4RSgGMG_qg5aR9aokQqm",
+            branch: "MECH",
+          },
+          {
+            title: "Engineering Mechanics Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1XSe7rORuV6JXNoqtbHlly7qvMVsNdZYX",
+            branch: "MECH",
+          },
+          {
+            title: "Engineering Mechanics Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1ZLU4dI--FNegoAY9xS31zGrdLCQ2TGEF",
+            branch: "MECH",
+          },
+        ],
+        "Strength of Materials": [
+          {
+            title: "Simple Stresses and Strains",
+            link: "https://drive.google.com/uc?export=download&id=1W0sc5TjFtboGqEeIXy0X45b22Y9O7kGt",
+            branch: "MECH",
+          },
+          {
+            title: "Compound Stresses, Shear Force and Bending Moments",
+            link: "https://drive.google.com/uc?export=download&id=1XHjYJ_D3PKaYTiGUAXep_32JfFNEbmnx",
+            branch: "MECH",
+          },
+          {
+            title: "Stresses in Beams, Cylinders and Spheres",
+            link: "https://drive.google.com/uc?export=download&id=1hAVBNN4OxCgZwDPhzhFWyWXMiEfaYv7A",
+            branch: "MECH",
+          },
+          {
+            title: "Deflection of Beams",
+            link: "https://drive.google.com/uc?export=download&id=13VRagBXdhLKitKJfcihj66NL778jkv_-",
+            branch: "MECH",
+          },
+          {
+            title: "Torsion of Shaftsand Springs, Columns",
+            link: "https://drive.google.com/uc?export=download&id=1Ldz4fvuiExmYuAa7sphANL5WYqkwQBO_",
+            branch: "MECH",
+          },
+          {
+            title: "Strength of Materials Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1i8K0zRZ7X0El81ogLTHFaPurSbYhGvTs",
+            branch: "MECH",
+          },
+          {
+            title: "Strength of Materials Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1XVoBqYP-9kguQFBwMWdqTzXdEujBPVVb",
+            branch: "MECH",
+          },
+          {
+            title: "Strength of Materials Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1ZEGsu2zS8ypp6jjb1G3tHAQ9LbyKtWSd",
+            branch: "MECH",
+          },
+        ],
+        "Theory of Machine, Vibrations & Design": [
+          {
+            title: "Kinematics and Dynamics of Mechanisms",
+            link: "https://drive.google.com/uc?export=download&id=12ZIpQLuNuBJfQr5gWCcI9Q5NUZrWaYG1",
+            branch: "MECH",
+          },
+          {
+            title: "Flywheels and Gear Trains",
+            link: "https://drive.google.com/uc?export=download&id=1Kb7h98ga-7qg4s8VFIw29QJcdl6ILxJJ",
+            branch: "MECH",
+          },
+          {
+            title: "Vibrations",
+            link: "https://drive.google.com/uc?export=download&id=1_SJzkzvXaAuYzVEImkOfmX8NqMtf4Z5f",
+            branch: "MECH",
+          },
+          {
+            title: "Theories of Failure, Static and Dynamic Loading",
+            link: "https://drive.google.com/uc?export=download&id=1FJDVGb2V_A-PeUfH61W_M_alBuqCjcV2",
+            branch: "MECH",
+          },
+          {
+            title: "Design of Machine Elements",
+            link: "https://drive.google.com/uc?export=download&id=12x81MECHLyeTrdttuDBJJVGmUqevTm9l",
+            branch: "MECH",
+          },
+          {
+            title: "Theory of Machines, Vibrations and Designs Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1oycs_zUOY3tjRIG7Sl4xryzGeWCQkrlH",
+            branch: "MECH",
+          },
+          {
+            title: "Theory of Machines, Vibrations and Designs Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1fAV3buKwJejth3vhgHgaXaKYlkpFt_QU",
+            branch: "MECH",
+          },
+          {
+            title: "Theory of Machines Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1ko6fdE2rg5wFFGC7MSEm-97u2iEykCRH",
+            branch: "MECH",
+          },
+          {
+            title: "Vibrations Test-4",
+            link: "https://drive.google.com/uc?export=download&id=1sFidXai90HD8DqOZVt-lnyBVhZqdzWrZ",
+            branch: "MECH",
+          },
+          {
+            title: "Machine Design Test-5",
+            link: "https://drive.google.com/uc?export=download&id=1oje2AMLSkGOVH4srsPE8_EgOSyHCVqLq",
+            branch: "MECH",
+          },
+          {
+            title: "Machine Design Test-6",
+            link: "https://drive.google.com/uc?export=download&id=1ijO6qH_Ch-GcHSPTx9U36V-V_Dm9c2lj",
+            branch: "MECH",
+          },
+        ],
+        "Fluid Mechanics": [
+          {
+            title: "Fluid Properties and Manometry",
+            link: "https://drive.google.com/uc?export=download&id=1OI3HXO3QO3qZ9nXT7o1d5-f8wrsSRyyU",
+            branch: "MECH",
+          },
+          {
+            title: "Fluid Pressure and Buoyancy",
+            link: "https://drive.google.com/uc?export=download&id=16QRGQioDFgfPWIYTnOfNixf8mcVKit97",
+            branch: "MECH",
+          },
+          {
+            title: "Fluid Kinematics and Dynamics",
+            link: "https://drive.google.com/uc?export=download&id=17VkzptXGXQe0bGTket0yqs5LVthv0CVz",
+            branch: "MECH",
+          },
+          {
+            title: "Viscous Flow ofIncompressible Fluids",
+            link: "https://drive.google.com/uc?export=download&id=1cNlYV0cwaMYq1CAVQoV8QvtT_s-IfyTm",
+            branch: "MECH",
+          },
+          {
+            title: "Turbo Machinery",
+            link: "https://drive.google.com/uc?export=download&id=1tL2SnQqGexv-1UtPRaonK1yhH6I3VYw_",
+            branch: "MECH",
+          },
+          {
+            title: "Fluid Mechanics and Fluid Machinery Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1JybNyEMnPqlKdKdaG3TaXgEYjPa2Pc4n",
+            branch: "MECH",
+          },
+          {
+            title: "Fluid Mechanics and Fluid Machinery Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1sryCGqEC_WKU7S7EEF4BH5WIGoiAG93h",
+            branch: "MECH",
+          },
+          {
+            title: "Fluid Mechanics Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1G1P3FjBLA6J_iuv_-Csx3Uc8hOUW-akR",
+            branch: "MECH",
+          },
+          {
+            title: "Fluid Mechanics Test-4",
+            link: "https://drive.google.com/uc?export=download&id=1dsOu4t0BAIXvwWunNNADA-U7PH1-GibV",
+            branch: "MECH",
+          },
+        ],
+        "Heat Transfer": [
+          {
+            title: "Conduction",
+            link: "https://drive.google.com/uc?export=download&id=1uzmdZGuuXe8P_jOB02LIFEHgYHvo3oES",
+            branch: "MECH",
+          },
+          {
+            title: "Forced Convection",
+            link: "https://drive.google.com/uc?export=download&id=1tSbB8QBnlnQVRmiIvnKwmZOxoAU1IDOk",
+            branch: "MECH",
+          },
+          {
+            title: "Natural Convectionand Mass Transfer",
+            link: "https://drive.google.com/uc?export=download&id=1IDNX78gKA6rGz1yjLbRJ1iiAmWiDyEUW",
+            branch: "MECH",
+          },
+          {
+            title: "Radiation and Heat Transfer",
+            link: "https://drive.google.com/uc?export=download&id=1yQMUWvprSppS29w3xDRe13JBBFDE83UO",
+            branch: "MECH",
+          },
+          {
+            title: "Heat Exchanger, Boilingand Condensation",
+            link: "https://drive.google.com/uc?export=download&id=148JYL3wGscDy-w2-VQR1CvAlXUwz-GLg",
+            branch: "MECH",
+          },
+          {
+            title: "Heat Transfer Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1XhzKvRUHMMEcQzK2qlLjTf1eeDCJVkWm",
+            branch: "MECH",
+          },
+          {
+            title: "Heat Transfer Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1TcKc5zunYzFcD84OPDbX6C4lWwWcHGSZ",
+            branch: "MECH",
+          },
+          {
+            title: "Heat Transfer, Refrigeration and Air Conditioning Test-3",
+            link: "https://drive.google.com/uc?export=download&id=13dEvhvY4RUvM3xehPO5t_yMhHw-lN7EY",
+            branch: "MECH",
+          },
+          {
+            title: "Heat Transfer, Refrigeration and Air Conditioning Test-4",
+            link: "https://drive.google.com/uc?export=download&id=1GDKyY4KIzZ-slMlYOOgEfjsVgPhZdtto",
+            branch: "MECH",
+          },
+        ],
+        "Thermodynamics": [
+          {
+            title:"Basic Conceptsof Thermodynamics and First Law of Thermodynamics",
+            link: "https://drive.google.com/uc?export=download&id=1KB3Kcw-HbHUh7JFZ3p4wE3Ya4I_rK_ZU",
+            branch: "MECH",
+          },
+          {
+            title: "Second Law of Thermodynamics",
+            link: "https://drive.google.com/uc?export=download&id=170OFcvUb_BsNsqt792cankQ43G0wEh96",
+            branch: "MECH",
+          },
+          {
+            title: "Properties of Pure Substances",
+            link: "https://drive.google.com/uc?export=download&id=19CanhcKltLvkuG1dWPSDJ-fBvy6g7unS",
+            branch: "MECH",
+          },
+          {
+            title: "Internal CombustionEngines",
+            link: "https://drive.google.com/uc?export=download&id=1pO6yPjF2HMilsV-6eqVOPdpOpKwVVrqW",
+            branch: "MECH",
+          },
+          {
+            title: "Thermodynamic Cycle",
+            link: "https://drive.google.com/uc?export=download&id=1YNvJLaKZX7p1vWnNDygZVGIvSpRneKvH",
+            branch: "MECH",
+          },
+          {
+            title: "Refrigeration and Air Conditioning",
+            link: "https://drive.google.com/uc?export=download&id=1T-Kr9mXHJsZLUVGl_ZCVd6LNVNCb-auE",
+            branch: "MECH",
+          },
+          {
+            title: "Thermodynamics Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1LBiVDB2v9cQHCPtmUsMTq655BK2-yzkC",
+            branch: "MECH",
+          },
+          {
+            title: "Thermodynamics Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1-w6DLmshTpppsEleYEhk_xSu5EeIF7jg",
+            branch: "MECH",
+          },
+          {
+            title: "Thermodynamics and its Applications Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1UW5sOWO2nrwL8tt7L4S4RzKcFW0l9fDx",
+            branch: "MECH",
+          },
+          {
+            title: "Thermodynamics and its Applications Test-4",
+            link: "https://drive.google.com/uc?export=download&id=1GkBq-xH-3mgOyMWToHDLJqeCUHYYX0tl",
+            branch: "MECH",
+          },
+          {
+            title: "Power Engineering Test-5",
+            link: "https://drive.google.com/uc?export=download&id=1aC7_cYeQfHtnb45USCrjWr_A3JEKKVvs",
+            branch: "MECH",
+          },
+          {
+            title: "Refrigeration Test-6",
+            link: "https://drive.google.com/uc?export=download&id=1fN5PyuQPIZYxMqcrokP7ejeYBCHTeHrG",
+            branch: "MECH",
+          },
+        ],
+        "Manufacturing Technology": [
+          {
+            title: "Structure andProperties of Materials",
+            link: "https://drive.google.com/uc?export=download&id=1xaWudQ21wFOTDaoOkbBGjn0nmajW9Leu",
+            branch: "MECH",
+          },
+          {
+            title: "Metal Casting and Forming",
+            link: "https://drive.google.com/uc?export=download&id=1L1Bu1m6HIQJBe-DWwU5gPqt7Ecgtr9wB",
+            branch: "MECH",
+          },
+          {
+            title: "Sheet Metal WorkingJoining Processes",
+            link: "https://drive.google.com/uc?export=download&id=1N9qnPypl3G4oZBPeH23r1El5TtJfHybn",
+            branch: "MECH",
+          },
+          {
+            title: "Machining and Machine Tool Operations",
+            link: "https://drive.google.com/uc?export=download&id=108-kRh8bkpHi_t8E73yWQIv3uGiNJJXE",
+            branch: "MECH",
+          },
+          {
+            title: "Metrology and Inspection Computer Integrated Manufacturing",
+            link: "https://drive.google.com/uc?export=download&id=14IHxwolUwvMHwlVHs-7FxxhiQIr7Fu5h",
+            branch: "MECH",
+          },
+          {
+            title: "Manufacturing Technology Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1QKyyDktgTgVdTgjLa2rbsqHe-Fde_ZJK",
+            branch: "MECH",
+          },
+          {
+            title: "Manufacturing Technology Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1r8PLG-UtDpzv2jlhxlwKPM9ERQsL8kAl",
+            branch: "MECH",
+          },
+          {
+            title: "Engineering Materials and Metrology and Inspection Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1LY2fSKAIFYwVMW_L1v9YK79mdqVvw94R",
+            branch: "MECH",
+          },
+          {
+            title: "Metal Casting, Forming and Joining Test-4",
+            link: "https://drive.google.com/uc?export=download&id=1d57kWH0gVdkIFUSrbEhI_-K-7nLFz9mm",
+            branch: "MECH",
+          },
+          {
+            title: "Machine Tools Test-5",
+            link: "https://drive.google.com/uc?export=download&id=1pijsvORXWF2hZ4RLmHTBv7H0827HWal6",
+            branch: "MECH",
+          },
+        ],
+        "Industrial Engineering": [
+          {
+            title: "Work Study",
+            link: "https://drive.google.com/uc?export=download&id=1DUfeXFimf3t_47OqCNxuZSONzXdRnzWt",
+            branch: "MECH",
+          },
+          {
+            title: "Production Planningand Control",
+            link: "https://drive.google.com/uc?export=download&id=10QqIdPQhbyCzLHNtAbsJ8d5bNDGxIRpi",
+            branch: "MECH",
+          },
+          {
+            title: "Material Requirement Planning and Inventory Control",
+            link: "https://drive.google.com/uc?export=download&id=1iHOXIqEuNsYNyleQYXb896wx0hdYOreP",
+            branch: "MECH",
+          },
+          {
+            title: "Operations Research -1",
+            link: "https://drive.google.com/uc?export=download&id=12NpD7HHzwr0z_aYhALJBMEHYJSbRdHEm",
+            branch: "MECH",
+          },
+          {
+            title: "Network Analysis and Queuing Theory",
+            link: "https://drive.google.com/uc?export=download&id=1G0r4IzBE__lbu6tprWVBAaluyoehmwQg",
+            branch: "MECH",
+          },
+          {
+            title: "Industrial Engineering Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1LEKMMlqIomg-PLIW_TLAMhidg5n6ZznO",
+            branch: "MECH",
+          },
+          {
+            title: "Industrial Engineering Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1WgzKYJ41TUzLwHvxepZtLy0xnCFluT7M",
+            branch: "MECH",
+          },
+          {
+            title: "Production Planning and Control Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1nAviUa0Ef7kKJyM6fiQVpbQjGH17kS8B",
+            branch: "MECH",
+          },
+          {
+            title: "Operations Research Test-4",
+            link: "https://drive.google.com/uc?export=download&id=1QH4s3fxyhGFDkUtAHee0Ci2YXUPHtXVC",
+            branch: "MECH",
+          },
+        ],
+        "ME Mock Test": [
+          {
+            title: "Mock Test-1",
+            link: "https://drive.google.com/file/d/1QASgqUPCSnHRh2xwkjL08WUWp9cgYHNG/view?usp=drive_link",
+            branch: "MECH",
+          },
+          {
+            title: "Mock Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1d4L_w4PrlPD_6mvxG1SSNHNoI9Zjt8fn",
+            branch: "MECH",
+          },
+          {
+            title: "Mock Test-3",
+            link: "https://drive.google.com/uc?export=download&id=14QP5XPTRENhas8yqv_-iV4P-8H7HSTpO",
+            branch: "MECH",
+          },
+        ],
+
+        // CIVIL
+        "Concrete Structures": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1dYPr-dc1EMzVkmTzT0pJFpqU_iddnZil?usp=drive_link",
+            branch: "CIVIL",
+          },
+        ],
+        "Construction Materials & Management": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1JsrXnaroEaYd2bBCac81uapSYgvdvo9A?usp=drive_link",
+            branch: "CIVIL",
+          },
+        ],
+        "Engineering Mechanics": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1eO-ajDE3M2yflHwSVENkDV_lFc2qdl5t?usp=drive_link",
+            branch: "CIVIL",
+          },
+        ],
+        "Environmental Engineering": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1n4TkHaLVXfa6VNMlwEoL-Wlf4TBAnsfB?usp=drive_link",
+            branch: "CIVIL",
+          },
+        ],
+        "Fluid Mechanics & Hydraulics": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1W3l9Ic4dD0lt2NePLx0fk7B_tndC_FPG?usp=drive_link",
+            branch: "CIVIL",
+          },
+        ],
+        "Geomatrics Engineering": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1ylIQL_jpVHFtXO4LaVrokdGPBhGwogRW?usp=drive_link",
+            branch: "CIVIL",
+          },
+        ],
+        "Solid Mechanics": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/11rlMLMc-AODzBTlB0tkPHzl46qgqzu9U?usp=drive_link",
+            branch: "CIVIL",
+          },
+        ],
+        "Steel Structures": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1lhwbxsFQ-0PK7XzDRezbAtm08Xf8yooL?usp=drive_link",
+            branch: "CIVIL",
+          },
+        ],
+        "Water Resources Engineering": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1serl8v2Hr5HLd1YKl_8Qbfgd3TC4zGkJ?usp=drive_link",
+            branch: "CIVIL",
+          },
+        ],
+        "Structural Analysis": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1VZiVBbK0wJRNmg2bQX1Kpo-zFS0Bn1vI?usp=drive_link",
+            branch: "CIVIL",
+          },
+        ],
+        "Geotechnical Engineering": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1diFt-T8luZ8Ngk6BCi_5kpY2TNOo3o0E?usp=drive_link",
+            branch: "CIVIL",
+          },
+        ],
+        "Transportation Engineering": [
+          {
+            title: "Chapter's",
+            link: "https://drive.google.com/drive/folders/1Skv294D0cSECTZzYmZtq3cdrh0YGzdx0?usp=drive_link",
+            branch: "CIVIL",
+          },
+        ],
+        "CE Mock Test": [
+          {
+            title: "Mock Test-1",
+            link: "https://drive.google.com/uc?export=download&id=1Lx6Pn_xgGZSapDj2SuKzlj5UbMAnJOpA",
+            branch: "CIVIL",
+          },
+          {
+            title: "Mock Test-2",
+            link: "https://drive.google.com/uc?export=download&id=1qxSwYClqAqJap20knsNtt4EuE07KORSx",
+            branch: "CIVIL",
+          },
+          {
+            title: "Mock Test-3",
+            link: "https://drive.google.com/uc?export=download&id=1yPHZOhFvt2AejMN4o5b00XkIryNqoZEA",
+            branch: "CIVIL",
+          },
+        ],
+      };
+
+      // Function to show sections and hide others
+      function showSection(sectionId) {
+        const sections = document.querySelectorAll(".section");
+        sections.forEach((section) => {
+          section.style.display = "none";
+        });
+        document.getElementById(sectionId).style.display = "block";
+      }
+
+      // Function to show subjects for a selected branch
+      function showSubjects(branch) {
+        const subjectList = document.getElementById("subject-list");
+        subjectList.innerHTML = "";
+        subjects[branch].forEach((subject) => {
+          const shortName = subject
+            .split(" ")
+            .map((word) => word[0].toUpperCase())
+            .join(""); // Get short name from each word
+          const li = document.createElement("li");
+          li.innerHTML = `<div class="notebook ${branch}" data-book="${shortName}"></div>${subject}`;
+          li.onclick = () => showChapters(subject);
+          subjectList.appendChild(li);
+        });
+        document.getElementById("subject-title").innerText = branch.replace(
+          /([a-z])([A-Z])/g,
+          "$1 $2"
+        );
+        showSection("subject-section");
+      }
+
+      // Function to show chapters for a selected subject
+      function showChapters(subject) {
+        const chapterList = document.getElementById("chapter-list");
+        chapterList.innerHTML = "";
+        chapters[subject].forEach((chapter) => {
+          const shortName = chapter.title
+            .split(" ")
+            .map((word) => word[0].toUpperCase())
+            .join(""); // Get short name from each word
+          const li = document.createElement("li");
+          li.innerHTML = `
+                    <div class="notebook ${chapter.branch}" data-book="${shortName}"></div>
+                    ${chapter.title}
+                    <a href="${chapter.link}" class="download-link" download>Download PDF</a>
+                `;
+          chapterList.appendChild(li);
+        });
+        document.getElementById("chapter-title").innerText = subject;
+        showSection("chapter-section");
+      }
+
+      // Function to track and display website visits
+      function trackVisits() {
+        let visits = localStorage.getItem("visitCount");
+        if (!visits) {
+          visits = 0;
+        }
+        visits++;
+        localStorage.setItem("visitCount", visits);
+        document.getElementById("visitCount").innerText = visits;
+      }
+
+      // Track visits when the page loads
+      window.onload = trackVisits;
+
+      // Show branch section by default
+      showSection("branch-section");
+    </script>
+  </body>
+</html>
