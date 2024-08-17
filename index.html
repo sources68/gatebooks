@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
     <meta name="description" content="Download comprehensive GATE eBooks for various engineering branches. 
                 Access detailed chapters, key concepts, and practice problems to excel in GATE exams. 
                 Tailored for aspiring engineers, our resources offer in-depth coverage of essential topics.">
@@ -35,6 +34,7 @@
           align-items: flex-start; /* Change from 'center' to 'flex-start' */
           flex-direction: column;
           min-height: 100vh; /* Ensure the body can grow beyond the viewport */
+          overflow-x: hidden;
           overflow-y: auto; /* Enable scrolling for the body */
         }
 
@@ -71,9 +71,9 @@
         background-color: #ffffff;
         border-radius: 5px;
         padding: 20px;
-        box-shadow: 0px 0px 30px rgb(3, 248, 199);
-        width: 90%;
-        max-width: 1000px;
+        box-shadow: 0px 0px 30px rgb(248, 244, 3);
+        width: 100%;
+        max-width: 600px;
         text-align: center;
         margin: 120px auto 20px auto; /* Centering the container with margins */
         overflow-y: auto;
@@ -87,7 +87,7 @@
 
       p {
         font-size: 20px;
-        color: #555555;
+        color: #000000;
         margin-bottom: 20px;
       }
 
@@ -225,7 +225,7 @@
       }
 
       /* Website visit counter style */
-    /* .visit-counter {
+     /* .visit-counter {
         position: fixed;
         bottom: 20px;
         right: 20px;
@@ -237,7 +237,7 @@
       }  */
 
       /* Hide all sections initially */
-     /* .section {
+      .section {
         display: none;
       }
 
@@ -275,7 +275,7 @@
         border-top: 1px solid #dddddd;
         margin: 20px auto; /* Center the contact section */
         width: 90%;
-        max-width: 1000px;
+        max-width: 600px;
       }
 
       .contact-section h2 {
@@ -312,7 +312,7 @@
       /* For screens smaller than 768px */
       @media (max-width: 768px) {
         .container {
-          width: 95%;
+          width: 90%;
           padding: 15px;
         }
 
@@ -322,16 +322,16 @@
         }
 
         h2 {
-          font-size: 28px;
+          font-size: 24px;
         }
 
         p {
-          font-size: 18px;
+          font-size: 16px;
         }
 
         li {
-          padding: 15px;
-          font-size: 16px;
+          padding: 20px;
+          font-size: 14px;
         }
 
         .notebook {
@@ -349,7 +349,7 @@
       /* For screens smaller than 480px */
       @media (max-width: 480px) {
         .container {
-          width: 100%;
+          width: 80%;
           padding: 10px;
         }
 
@@ -359,16 +359,16 @@
         }
 
         h2 {
-          font-size: 24px;
+          font-size: 20px;
         }
 
         p {
-          font-size: 16px;
+          font-size: 14px;
         }
 
         li {
-          padding: 10px;
-          font-size: 14px;
+          padding: 20px;
+          font-size: 10px;
         }
 
         .notebook {
@@ -380,7 +380,7 @@
 
         .download-link {
           padding: 5px 10px;
-          font-size: 14px;
+          font-size: 9px;
         }
       }
 
@@ -389,7 +389,7 @@
 
   <body>
     <!-- Website visit counter -->
-   <!-- <div class="visit-counter">Visits: <span id="visitCount"></span></div>   -->
+   <!-- <div class="visit-counter">Visits: <span id="visitCount"></span></div>  -->
 
     <!-- Main title placed outside the container -->
     <h1 class="main-title">Welcome to Gate e-Books</h1>
@@ -2249,7 +2249,7 @@
       }
 
       // Function to track and display website visits
-        function trackVisits() {
+      function trackVisits() {
         let visits = localStorage.getItem("visitCount");
         if (!visits) {
           visits = 0;
