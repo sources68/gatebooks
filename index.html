@@ -3,352 +3,359 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Download comprehensive GATE eBooks for various engineering branches. 
+    <meta
+      name="description"
+      content="Download comprehensive GATE eBooks for various engineering branches. 
                 Access detailed chapters, key concepts, and practice problems to excel in GATE exams. 
-                Tailored for aspiring engineers, our resources offer in-depth coverage of essential topics.">
-    <meta name="keyword" content="GATE eBooks, GATE exam preparation, engineering eBooks, GATE study material, 
+                Tailored for aspiring engineers, our resources offer in-depth coverage of essential topics."
+    />
+    <meta
+      name="keyword"
+      content="GATE eBooks, GATE exam preparation, engineering eBooks, GATE study material, 
                 GATE chapters, GATE practice questions, engineering branches, GATE subject-wise eBooks, 
-                download GATE books, GATE exam guide">
+                download GATE books, GATE exam guide"
+    />
 
     <title>Gate eBooks</title>
     <style>
-              /* Basic styling for the page */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #e3d9d9;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Change from 'center' to 'flex-start' */
-  flex-direction: column;
-  min-height: 100vh; /* Ensure the body can grow beyond the viewport */
-  overflow-x: hidden; /* Disable horizontal scrolling */
-  overflow-y: auto; /* Enable scrolling for the body */
-}
+      /* Basic styling for the page */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f6f5f5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* Change from 'center' to 'flex-start' */
+        flex-direction: column;
+        min-height: 100vh; /* Ensure the body can grow beyond the viewport */
+        overflow-x: hidden; /* Disable horizontal scrolling */
+        overflow-y: auto; /* Enable scrolling for the body */
+      }
 
-/* Stylish header with gradient background and drop shadow */
-.main-title {
-  padding: 0px;
-  width: 100%;
-  position: sticky;
-  top: none;
-  font-size: 3rem;
-  color: #ffffff;
-  text-align: center;
-  background: linear-gradient(to right, #0015ff, #ff0000);
-  background-clip: text;
-  color: transparent;
-  z-index: 1000;
-}
+      /* Stylish header with gradient background and drop shadow */
+      .main-title {
+        padding: 0px;
+        width: 100%;
+        position: sticky;
+        top: none;
+        font-size: 5rem;
+        color: #ffffff;
+        text-align: center;
+        background: linear-gradient(to right, #0015ff, #ff0000);
+        background-clip: text;
+        color: transparent;
+        z-index: 1000;
+      }
 
-/* Container for all content */
-.container {
-  background: white;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0px 0px 30px rgb(255, 1, 1);
-  width: 800px;
-  max-width: 90%; /* Adjust width for responsiveness */
-  text-align: center;
-  margin: 100px auto 50px auto;
-  overflow-y: auto;
-}
+      /* Container for all content */
+      .container {
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0px 0px 30px rgb(0, 0, 0);
+        width: 800px;
+        max-width: 90%; /* Adjust width for responsiveness */
+        text-align: center;
+        margin: 100px auto 50px auto;
+        overflow-y: auto;
+      }
 
-/* Title and description styling */
-h2 {
-  font-size: 28px; /* Adjusted for responsiveness */
-  margin-bottom: 20px;
-}
+      /* Title and description styling */
+      h2 {
+        font-size: 36px; /* Adjusted for responsiveness */
+        margin-bottom: 20px;
+      }
 
-p {
-  font-size: 20px; /* Adjusted for responsiveness */
-  color: #000000;
-  margin-bottom: 20px;
-}
+      p {
+        font-size: 28px; /* Adjusted for responsiveness */
+        color: #000000;
+        margin-bottom: 20px;
+      }
 
-/* Style for notebook icons */
-.notebook {
-  display: inline-block;
-  width: 50px;
-  height: 60px;
-  border-radius: 5px;
-  margin-right: 10px;
-  position: relative;
-  color: #ffffff;
-  text-align: center;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 60px;
-  overflow: hidden;
-  background: linear-gradient(to right);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.3s ease-in-out;
-}
+      /* Style for notebook icons */
+      .notebook {
+        display: inline-block;
+        width: 50px;
+        height: 60px;
+        border-radius: 5px;
+        margin-right: 10px;
+        position: relative;
+        color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 60px;
+        overflow: hidden;
+        background: linear-gradient(to right);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease-in-out;
+      }
 
-/* Add glowing effect on hover */
-.notebook:hover {
-  box-shadow: 0 0 20px 10px;
-}
-  
-/* Style for short name of the book */
-.notebook::before {
-  content: attr(data-book);
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  text-shadow: #000;
-}
+      /* Add glowing effect on hover */
+      .notebook:hover {
+        box-shadow: 0 0 20px 10px;
+      }
 
-/* Different colors for each branch */
-.CSE {
-  background-color: #007bff;
-}
+      /* Style for short name of the book */
+      .notebook::before {
+        content: attr(data-book);
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        text-shadow: #000;
+      }
 
-.CSE:hover {
-  box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0.7);
-}
+      /* Different colors for each branch */
+      .CSE {
+        background-color: #0004ff;
+      }
 
-.ECE {
-  background-color: #28a745;
-}
+      .CSE:hover {
+        box-shadow: 0 0 20px 10px rgba(38, 0, 255, 0.7);
+      }
 
-.ECE:hover {
-  box-shadow: 0 0 20px 10px rgba(40, 167, 69, 0.7);
-}
+      .ECE {
+        background-color: #28a745;
+      }
 
-.MECH {
-  background-color: #ffc107;
-}
+      .ECE:hover {
+        box-shadow: 0 0 20px 10px rgba(40, 167, 69, 0.7);
+      }
 
-.MECH:hover {
-  box-shadow: 0 0 20px 10px rgba(255, 193, 7, 0.7);
-}
+      .MECH {
+        background-color: #ffc107;
+      }
 
-.CIVIL {
-  background-color: #dc3545;
-}
+      .MECH:hover {
+        box-shadow: 0 0 20px 10px rgba(255, 193, 7, 0.7);
+      }
 
-.CIVIL:hover {
-  box-shadow: 0 0 20px 10px rgba(220, 53, 69, 0.7);
-}
+      .CIVIL {
+        background-color: #dc3545;
+      }
 
-.ELECTRICAL {
-  background-color: #17a2b8;
-}
+      .CIVIL:hover {
+        box-shadow: 0 0 20px 10px rgba(220, 53, 69, 0.7);
+      }
 
-.ELECTRICAL:hover {
-  box-shadow: 0 0 20px 10px rgba(23, 162, 184, 0.7);
-}
+      .ELECTRICAL {
+        background-color: #17a2b8;
+      }
 
-.OS {
-  background-color: #6f42c1;
-}
+      .ELECTRICAL:hover {
+        box-shadow: 0 0 20px 10px rgba(23, 162, 184, 0.7);
+      }
 
-.OS:hover {
-  box-shadow: 0 0 20px 10px rgba(111, 66, 193, 0.7);
-}
+      .OS {
+        background-color: #6f42c1;
+      }
 
-/* Animation style for list items */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
+      .OS:hover {
+        box-shadow: 0 0 20px 10px rgba(111, 66, 193, 0.7);
+      }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+      /* Animation style for list items */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
 
-li {
-  padding: 25px;
-  cursor: pointer;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: fadeIn 0.5s ease-in-out;
-  position: relative;
-  margin-bottom: 20px;
-  background-color: #f7f7f7;
-  box-shadow: 0 5px 10px rgba(253, 60, 60, 0.1);
-}
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
 
-li:hover {
-  background-color: #eaeaea;
-}
+      li {
+        padding: 30px;
+        cursor: pointer;
+        border-radius: 20px;
+        display: flex;
+        font-size: larger;
+        align-items: center;
+        justify-content: center;
+        animation: fadeIn 0.5s ease-in-out;
+        position: relative;
+        margin-bottom: 20px;
+        background-color: #f7f7f7;
+        box-shadow: 0 5px 10px rgba(253, 60, 60, 0.1);
+      }
 
-/* Center the back button */
-.back-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
+      li:hover {
+        background-color: #eaeaea;
+      }
 
-.back-button:hover {
-  background-color: #555;
-}
+      /* Center the back button */
+      .back-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
 
-/* Hide all sections initially */
-.section {
-  display: none;
-}
+      .back-button:hover {
+        background-color: #555;
+      }
 
-/* Style for download links aligned to the right */
-.download-link {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  background-color: #0084ff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-}
+      /* Hide all sections initially */
+      .section {
+        display: none;
+      }
 
-.download-link:hover {
-  background-color: #0015ff;
-}
+      /* Style for download links aligned to the right */
+      .download-link {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        background-color: #0084ff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
 
-/* Ensure the book icon stays on the left */
-.notebook {
-  position: absolute;
-  left: 10px;
-}
+      .download-link:hover {
+        background-color: #0015ff;
+      }
 
-/* Contact section styling */
-.contact-section {
-  padding: 20px;
-  text-align: center;
-  background-color: #f1f1f1;
-  border-top: 1px solid #dddddd;
-  margin: 20px auto; /* Center the contact section */
-  width: 90%;
-  max-width: 800px; /* Adjusted for responsiveness */
-}
+      /* Ensure the book icon stays on the left */
+      .notebook {
+        position: absolute;
+        left: 10px;
+      }
 
-/* Stylish footer styling */
-footer {
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  margin-top: 20px;
-  width: 100%;
-}
+      /* Contact section styling */
+      .contact-section {
+        padding: 10px;
+        text-align: center;
+        background-color: #d6d6d6;
+        margin: 20px auto; /* Center the contact section */
+        width: 600px;
+        max-width: 90%; /* Adjusted for responsiveness */
+      }
 
-footer a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0 10px;
-}
+      /* Stylish footer styling */
+      footer {
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+      }
 
-footer a:hover {
-  text-decoration: underline;
-}
+      footer a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 10px;
+      }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-  .body{
-    display: block;
-  }
-  .container {
-    width: 90%; /* Adjusted width for smaller screens */
-    padding: 15px;
-  }
+      footer a:hover {
+        text-decoration: underline;
+      }
 
-  .main-title {
-    font-size: 36px;
-    padding: 15px;
-  }
+      /* Media queries for responsiveness */
+      @media (max-width: 768px) {
+        .body {
+          display: block;
+        }
+        .container {
+          width: 90%; /* Adjusted width for smaller screens */
+          padding: 15px;
+        }
 
-  h2 {
-    font-size: 24px; /* Adjusted for responsiveness */
-  }
+        .main-title {
+          font-size: 36px;
+          padding: 15px;
+        }
 
-  p {
-    font-size: 16px; /* Adjusted for responsiveness */
-  }
+        h2 {
+          font-size: 24px; /* Adjusted for responsiveness */
+        }
 
-  li {
-    padding: 15px;
-    font-size: 14px;
-  }
+        p {
+          font-size: 16px; /* Adjusted for responsiveness */
+        }
 
-  .notebook {
-    width: 40px;
-    height: 50px;
-    font-size: 14px;
-    line-height: 50px;
-  }
+        li {
+          font-size: larger;
+          padding: 15px;
+          font-size: 14px;
+        }
 
-  .download-link {
-    padding: 8px 15px;
-  }
-}
+        .notebook {
+          width: 40px;
+          height: 50px;
+          font-size: 14px;
+          line-height: 50px;
+        }
 
-@media (max-width: 480px) {
-  .body{
-    display: none;
-  }
-  .container {
-    width: 80%; /* Adjusted width for very small screens */
-    padding: 10px;
-  }
+        .download-link {
+          padding: 8px 15px;
+        }
+      }
 
-  .main-title {
-    font-size: 28px;
-    padding: 20px;
-  }
+      @media (max-width: 480px) {
+        .body {
+          display: none;
+        }
+        .container {
+          width: 80%; /* Adjusted width for very small screens */
+          padding: 10px;
+        }
 
-  h2 {
-    font-size: 20px; /* Adjusted for responsiveness */
-  }
+        .main-title {
+          font-size: 28px;
+          padding: 20px;
+        }
 
-  p {
-    font-size: 14px; /* Adjusted for responsiveness */
-  }
+        h2 {
+          font-size: 20px; /* Adjusted for responsiveness */
+        }
 
-  li {
-    padding: 20px;
-    font-size: 10px;
-  }
+        p {
+          font-size: 14px; /* Adjusted for responsiveness */
+        }
 
-  .notebook {
-    width: 35px;
-    height: 45px;
-    font-size: 12px;
-    line-height: 45px;
-  }
+        li {
+          font-size: larger;
+          padding: 20px;
+          font-size: 10px;
+        }
 
-  .download-link {
-    padding: 5px 10px;
-    font-size: 8px;
-  }
-}
+        .notebook {
+          width: 35px;
+          height: 45px;
+          font-size: 12px;
+          line-height: 45px;
+        }
 
+        .download-link {
+          padding: 5px 10px;
+          font-size: 8px;
+        }
+      }
     </style>
   </head>
 
   <body>
     <!-- Website visit counter -->
-   <!-- <div class="visit-counter">Visits: <span id="visitCount"></span></div>  -->
+    <!-- <div class="visit-counter">Visits: <span id="visitCount"></span></div>  -->
 
     <!-- Main title placed outside the container -->
     <h1 class="main-title">Welcome to Gate e-Books</h1>
@@ -417,7 +424,10 @@ footer a:hover {
     <!-- Contact Section -->
     <div class="contact-section">
       <h2>Contact Us</h2>
-      <p>If you have any questions or feedback, please reach out to us at <a href="mailto:otheruses306@gmail.com">otheruses306@gmail.com</a>.</p>
+      <p>
+        If you have any questions or feedback, please reach out to us at
+        <a href="mailto:otheruses306@gmail.com">otheruses306@gmail.com</a>.
+      </p>
     </div>
 
     <!-- Stylish Footer -->
@@ -426,7 +436,7 @@ footer a:hover {
       <p>
         <a href="#branch-section">Home</a> |
         <a href="#contact-section">Contact</a> |
-        <a href="Privacy Policy.html" target="_blank">Privacy Policy</a>
+        <a href="C:\Users\anura\OneDrive\Desktop\Final Code">Privacy Policy</a>
       </p>
     </footer>
 
@@ -500,9 +510,8 @@ footer a:hover {
 
       // Array of chapters for each subject with unique download links and branch colors
       const chapters = {
-
-         // CSE
-        "Algorithms": [
+        // CSE
+        Algorithms: [
           {
             title: "Asymptotic Analysis",
             link: "https://drive.google.com/uc?export=download&id=18prO1I8l5xw4nx1Hh_xCFdrjM2y4TPTM",
@@ -558,7 +567,7 @@ footer a:hover {
             branch: "CSE",
           },
         ],
-        "Databases": [
+        Databases: [
           {
             title: "Chapter's",
             link: "https://drive.google.com/drive/folders/1jP-Vk4LS8d2aT_s21QdpHp_KEeioHXHC?usp=drive_link",
@@ -579,7 +588,7 @@ footer a:hover {
             branch: "CSE",
           },
         ],
-        "Network": [
+        Network: [
           {
             title: "Chapter's",
             link: "https://drive.google.com/drive/folders/1MhW4A-z-jreNS8Xk_Y2V2ln1TPGyKkEs?usp=drive_link",
@@ -641,7 +650,7 @@ footer a:hover {
             branch: "CSE",
           },
         ],
-          
+
         // ECE
         "Digital Circuits": [
           {
@@ -967,7 +976,7 @@ footer a:hover {
             branch: "ECE",
           },
         ],
-        "Electromagnetics": [
+        Electromagnetics: [
           {
             title: "Elements of Vector Calculus & Static Fields",
             link: "https://drive.google.com/uc?export=download&id=1-zrDETTW0HvxEPS7CEN9_XcxqbsOzOwk",
@@ -1080,7 +1089,7 @@ footer a:hover {
             branch: "OS",
           },
         ],
-        "English": [
+        English: [
           {
             title: "Grammer",
             link: "https://drive.google.com/uc?export=download&id=1-zQDNBYTwt-UEK8WQhZy4rY3eLvxDM16",
@@ -1112,7 +1121,7 @@ footer a:hover {
             branch: "OS",
           },
         ],
-        "Aptitude": [
+        Aptitude: [
           {
             title: "Simple Equations",
             link: "https://drive.google.com/uc?export=download&id=1OfD1W6fZCVNJvm3MLfaI0_chIuvKBOHV",
@@ -1199,7 +1208,7 @@ footer a:hover {
             branch: "OS",
           },
         ],
-        "Reasoning": [
+        Reasoning: [
           {
             title: "Number and Letter Series",
             link: "https://drive.google.com/uc?export=download&id=18PE264EmRMGgzYpCjaqT1YZgCaAJr0v5",
@@ -1873,9 +1882,10 @@ footer a:hover {
             branch: "MECH",
           },
         ],
-        "Thermodynamics": [
+        Thermodynamics: [
           {
-            title:"Basic Conceptsof Thermodynamics and First Law of Thermodynamics",
+            title:
+              "Basic Conceptsof Thermodynamics and First Law of Thermodynamics",
             link: "https://drive.google.com/uc?export=download&id=1KB3Kcw-HbHUh7JFZ3p4wE3Ya4I_rK_ZU",
             branch: "MECH",
           },
@@ -2207,22 +2217,8 @@ footer a:hover {
         showSection("chapter-section");
       }
 
-      // Function to track and display website visits
-      function trackVisits() {
-        let visits = localStorage.getItem("visitCount");
-        if (!visits) {
-          visits = 0;
-        }
-        visits++;
-        localStorage.setItem("visitCount", visits);
-        document.getElementById("visitCount").innerText = visits;
-      }
-
-      // Track visits when the page loads
-      window.onload = trackVisits;
-
       // Show branch section by default
-      showSection("branch-section");  
+      showSection("branch-section");
     </script>
   </body>
 </html>
